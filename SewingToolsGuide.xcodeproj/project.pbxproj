@@ -14,6 +14,7 @@
 		9C69290F2433B33300EBCACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C69290E2433B33300EBCACF /* Assets.xcassets */; };
 		9C6929122433B33300EBCACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6929102433B33300EBCACF /* LaunchScreen.storyboard */; };
 		9C69291A2433B68100EBCACF /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6929192433B68100EBCACF /* detailsVC.swift */; };
+		9C69291E243417A200EBCACF /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69291D243417A200EBCACF /* Tool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9C6929112433B33300EBCACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6929132433B33300EBCACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6929192433B68100EBCACF /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
+		9C69291D243417A200EBCACF /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				9C6929072433B33200EBCACF /* SceneDelegate.swift */,
 				9C6929092433B33200EBCACF /* ViewController.swift */,
 				9C6929192433B68100EBCACF /* detailsVC.swift */,
+				9C69291D243417A200EBCACF /* Tool.swift */,
 				9C69290B2433B33200EBCACF /* Main.storyboard */,
 				9C69290E2433B33300EBCACF /* Assets.xcassets */,
 				9C6929102433B33300EBCACF /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				9C69290A2433B33200EBCACF /* ViewController.swift in Sources */,
 				9C69291A2433B68100EBCACF /* detailsVC.swift in Sources */,
 				9C6929062433B33200EBCACF /* AppDelegate.swift in Sources */,
+				9C69291E243417A200EBCACF /* Tool.swift in Sources */,
 				9C6929082433B33200EBCACF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
