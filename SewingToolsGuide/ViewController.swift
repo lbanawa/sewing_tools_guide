@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    var myTools = [Tool]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,18 +27,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let measuringTape = Tool(toolName: "Measuring Tape", toolJob: "Measure flat and 3D objects", toolImage: UIImage(named: "measuringtape.jpg")!)
         let patternWeights = Tool(toolName: "Pattern Weights", toolJob: "Hold fabric and/or pattern paper flat", toolImage: UIImage(named: "patternweights.jpg")!)
         
-        let toolArray = [tailorsHam, rulers, seamRipper, measuringTape, patternWeights]
+        myTools.append(tailorsHam)
+        myTools.append(rulers)
+        myTools.append(seamRipper)
+        myTools.append(measuringTape)
+        myTools.append(patternWeights)
         
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return myTools.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Tailor's Ham"
+        cell.textLabel?.text = myTools[indexPath.row].name
         return cell
     }
 
