@@ -13,8 +13,15 @@ class detailsVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var jobLabel: UILabel!
     
+    var selectedTool : Tool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // show the specified name, job and image that corresponds with the tool chosen
+        nameLabel.text = selectedTool?.name
+        jobLabel.text = selectedTool?.job
+        imageView.image = selectedTool?.image
 
         // Do any additional setup after loading the view.
     }
